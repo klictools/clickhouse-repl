@@ -1,0 +1,345 @@
+[[package]]
+name = "appnope"
+version = "0.1.2"
+description = "Disable App Nap on macOS >= 10.9"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "backcall"
+version = "0.2.0"
+description = "Specifications for callback functions passed in to an API"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "click"
+version = "7.1.2"
+description = "Composable command line interface toolkit"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[[package]]
+name = "clickhouse-driver"
+version = "0.2.0"
+description = "Python driver with native interface for ClickHouse"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.dependencies]
+pytz = "*"
+tzlocal = "<3.0"
+
+[package.extras]
+lz4 = ["lz4 (<=3.0.1)", "clickhouse-cityhash (>=1.0.2.1)"]
+numpy = ["numpy (>=1.12.0)", "pandas (>=0.24.0)"]
+zstd = ["zstd", "clickhouse-cityhash (>=1.0.2.1)"]
+
+[[package]]
+name = "colorama"
+version = "0.4.4"
+description = "Cross-platform colored terminal text."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[[package]]
+name = "decorator"
+version = "4.4.2"
+description = "Decorators for Humans"
+category = "main"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*"
+
+[[package]]
+name = "ipython"
+version = "7.19.0"
+description = "IPython: Productive Interactive Computing"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+appnope = {version = "*", markers = "sys_platform == \"darwin\""}
+backcall = "*"
+colorama = {version = "*", markers = "sys_platform == \"win32\""}
+decorator = "*"
+jedi = ">=0.10"
+pexpect = {version = ">4.3", markers = "sys_platform != \"win32\""}
+pickleshare = "*"
+prompt-toolkit = ">=2.0.0,<3.0.0 || >3.0.0,<3.0.1 || >3.0.1,<3.1.0"
+pygments = "*"
+traitlets = ">=4.2"
+
+[package.extras]
+all = ["Sphinx (>=1.3)", "ipykernel", "ipyparallel", "ipywidgets", "nbconvert", "nbformat", "nose (>=0.10.1)", "notebook", "numpy (>=1.14)", "pygments", "qtconsole", "requests", "testpath"]
+doc = ["Sphinx (>=1.3)"]
+kernel = ["ipykernel"]
+nbconvert = ["nbconvert"]
+nbformat = ["nbformat"]
+notebook = ["notebook", "ipywidgets"]
+parallel = ["ipyparallel"]
+qtconsole = ["qtconsole"]
+test = ["nose (>=0.10.1)", "requests", "testpath", "pygments", "nbformat", "ipykernel", "numpy (>=1.14)"]
+
+[[package]]
+name = "ipython-genutils"
+version = "0.2.0"
+description = "Vestigial utilities from IPython"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "jedi"
+version = "0.17.2"
+description = "An autocompletion tool for Python that can be used for text editors."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[package.dependencies]
+parso = ">=0.7.0,<0.8.0"
+
+[package.extras]
+qa = ["flake8 (==3.7.9)"]
+testing = ["Django (<3.1)", "colorama", "docopt", "pytest (>=3.9.0,<5.0.0)"]
+
+[[package]]
+name = "parso"
+version = "0.7.1"
+description = "A Python Parser"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.extras]
+testing = ["docopt", "pytest (>=3.0.7)"]
+
+[[package]]
+name = "pexpect"
+version = "4.8.0"
+description = "Pexpect allows easy control of interactive console applications."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+ptyprocess = ">=0.5"
+
+[[package]]
+name = "pickleshare"
+version = "0.7.5"
+description = "Tiny 'shelve'-like database with concurrency support"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "prompt-toolkit"
+version = "3.0.10"
+description = "Library for building powerful interactive command lines in Python"
+category = "main"
+optional = false
+python-versions = ">=3.6.1"
+
+[package.dependencies]
+wcwidth = "*"
+
+[[package]]
+name = "ptyprocess"
+version = "0.7.0"
+description = "Run a subprocess in a pseudo terminal"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "pygments"
+version = "2.7.4"
+description = "Pygments is a syntax highlighting package written in Python."
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[[package]]
+name = "pytz"
+version = "2020.5"
+description = "World timezone definitions, modern and historical"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "traitlets"
+version = "5.0.5"
+description = "Traitlets Python configuration system"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+ipython-genutils = "*"
+
+[package.extras]
+test = ["pytest"]
+
+[[package]]
+name = "tzlocal"
+version = "2.1"
+description = "tzinfo object for the local timezone"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pytz = "*"
+
+[[package]]
+name = "wcwidth"
+version = "0.2.5"
+description = "Measures the displayed width of unicode strings in a terminal"
+category = "main"
+optional = false
+python-versions = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.7"
+content-hash = "65078277f773a674a5243903573d3e75cdfd887fe0d0a88bcbbc83a077b28134"
+
+[metadata.files]
+appnope = [
+    {file = "appnope-0.1.2-py2.py3-none-any.whl", hash = "sha256:93aa393e9d6c54c5cd570ccadd8edad61ea0c4b9ea7a01409020c9aa019eb442"},
+    {file = "appnope-0.1.2.tar.gz", hash = "sha256:dd83cd4b5b460958838f6eb3000c660b1f9caf2a5b1de4264e941512f603258a"},
+]
+backcall = [
+    {file = "backcall-0.2.0-py2.py3-none-any.whl", hash = "sha256:fbbce6a29f263178a1f7915c1940bde0ec2b2a967566fe1c65c1dfb7422bd255"},
+    {file = "backcall-0.2.0.tar.gz", hash = "sha256:5cbdbf27be5e7cfadb448baf0aa95508f91f2bbc6c6437cd9cd06e2a4c215e1e"},
+]
+click = [
+    {file = "click-7.1.2-py2.py3-none-any.whl", hash = "sha256:dacca89f4bfadd5de3d7489b7c8a566eee0d3676333fbb50030263894c38c0dc"},
+    {file = "click-7.1.2.tar.gz", hash = "sha256:d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a"},
+]
+clickhouse-driver = [
+    {file = "clickhouse-driver-0.2.0.tar.gz", hash = "sha256:62d37f93872d5a13eb6b0d52bab2b593ed0e14cf9200949aa2d02f9801064c0f"},
+    {file = "clickhouse_driver-0.2.0-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:cf015d17c9c8369d75310c4388c832300b311004180849eea342a282e09c0111"},
+    {file = "clickhouse_driver-0.2.0-cp27-cp27m-manylinux1_i686.whl", hash = "sha256:ff53cc75ab9bacb55b8a5e7215f7c073bff7974b3f3c9cd96a9c02ece1e62019"},
+    {file = "clickhouse_driver-0.2.0-cp27-cp27m-manylinux1_x86_64.whl", hash = "sha256:d4a6f63bde2bab0c0beb0a47bb3318cdfe34398298e0a94f5f3588e460376b90"},
+    {file = "clickhouse_driver-0.2.0-cp27-cp27m-manylinux2010_i686.whl", hash = "sha256:ac2410ef71e72cc67585260c18587693f4dad4fc288d7bf4850649eaf0eef1fa"},
+    {file = "clickhouse_driver-0.2.0-cp27-cp27m-manylinux2010_x86_64.whl", hash = "sha256:de0142b1600e2cf76de708c96eaad583b01249911300ff7ac83ef8e643062a7e"},
+    {file = "clickhouse_driver-0.2.0-cp27-cp27mu-manylinux1_i686.whl", hash = "sha256:0696fcc9b4a05c926b770ab08e04b083c93abfb3f7f0316d1bce20a5894901c5"},
+    {file = "clickhouse_driver-0.2.0-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:7a9425f741df899453f6e8382d1d6168f1acb4d72a0ca001e23453a451dd712d"},
+    {file = "clickhouse_driver-0.2.0-cp27-cp27mu-manylinux2010_i686.whl", hash = "sha256:2b24d0e927d17ad3245044f79032058b8c3fa6dddc3192f75fdce32632073e43"},
+    {file = "clickhouse_driver-0.2.0-cp27-cp27mu-manylinux2010_x86_64.whl", hash = "sha256:01dfd4fbba3dee10437d4c9534159e556691b029f18860d999aef6686bc978a2"},
+    {file = "clickhouse_driver-0.2.0-cp35-cp35m-macosx_10_9_x86_64.whl", hash = "sha256:eed8f7214751c870624d68c30ac9f2233fbeee300caae1748b0f86501314cc61"},
+    {file = "clickhouse_driver-0.2.0-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:612421bc789ec1bd4f3c0b0792a2fb9a8b97fd5138960dedba60783b5e8b28ec"},
+    {file = "clickhouse_driver-0.2.0-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:6c48ebb3be0b0cb6cb7dcfce9f8ec078f3d9ce74f86606edfc58444ee9523096"},
+    {file = "clickhouse_driver-0.2.0-cp35-cp35m-manylinux2010_i686.whl", hash = "sha256:ec863a80600a9c7d8cab60e1bc051b0fa525e712a141cb66c6e6a66cf83faa74"},
+    {file = "clickhouse_driver-0.2.0-cp35-cp35m-manylinux2010_x86_64.whl", hash = "sha256:b1a13fc73faba77aec75101e190d22253b125e08c3abd5cb1b8727fa4e4b8e67"},
+    {file = "clickhouse_driver-0.2.0-cp35-cp35m-win32.whl", hash = "sha256:b55aa541eb2ebcbcbd25df5203942f19d778efbc7ec43c33f0620d0347d87e04"},
+    {file = "clickhouse_driver-0.2.0-cp35-cp35m-win_amd64.whl", hash = "sha256:cedc6fb30303012fbb5dec6605ea7694784d806291958367984fe1a333aff687"},
+    {file = "clickhouse_driver-0.2.0-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:c454a9053feb8b4fd21af24a79128d87662a49dbaaa2d5eb612d29d3f139d3ae"},
+    {file = "clickhouse_driver-0.2.0-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:1f0335d98d6a86a4f0505cd4f98f96e08906619fd8fdf6a5de05fb5ee6976521"},
+    {file = "clickhouse_driver-0.2.0-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:195656ae622901e166cde6d338d4a13a54e3a38e255793777bdf56130858eef5"},
+    {file = "clickhouse_driver-0.2.0-cp36-cp36m-manylinux2010_i686.whl", hash = "sha256:d3195c9f5343149dfffd729daac72e0ca7030c87a10ba2cbb41df7348e547eed"},
+    {file = "clickhouse_driver-0.2.0-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:f789ed03d1c7aefc6e7a626c51fec9048efc076d0326751614b48a0857331b99"},
+    {file = "clickhouse_driver-0.2.0-cp36-cp36m-win32.whl", hash = "sha256:edbdcbb7c32e0efb1eda143b21383172e2d709837c2d09e036edcf41b770df8e"},
+    {file = "clickhouse_driver-0.2.0-cp36-cp36m-win_amd64.whl", hash = "sha256:51e8d9d6199f2ade571b72827a8088b46931768d7c0d67c1a4b6ad8aabff75eb"},
+    {file = "clickhouse_driver-0.2.0-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:8fd90935d914384f39aca714b60bfa1fa59fe135dd19c99ccf8f5b1271aed78d"},
+    {file = "clickhouse_driver-0.2.0-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:5efb241dac6c69c9a26275c409b2a81141c993b37bb7a1ac7d9a38207276c3a4"},
+    {file = "clickhouse_driver-0.2.0-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:5719e9e10e64426e193042f0ba5bd4927aaeb83ed063511f8f586448b9725d89"},
+    {file = "clickhouse_driver-0.2.0-cp37-cp37m-manylinux2010_i686.whl", hash = "sha256:6db2322f7ecdd2481d2a3d34ac11d71fbe6b4a407a44617acbd058c92ae3a08a"},
+    {file = "clickhouse_driver-0.2.0-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:315103ab8c10f9b1a547b7ec7c1a7a668fce8c89dfc350439949edad3d986074"},
+    {file = "clickhouse_driver-0.2.0-cp37-cp37m-win32.whl", hash = "sha256:a88fad262d2b833e073eaeca3d054cdbbf06ec78a1f1b0e978420f53ba42b90e"},
+    {file = "clickhouse_driver-0.2.0-cp37-cp37m-win_amd64.whl", hash = "sha256:a904f4c04011a90419f4488f607f1fcf973814b0f9f6f93ca0015578922cc0e4"},
+    {file = "clickhouse_driver-0.2.0-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:9055e329affa8c221479b2375a0e23cf9238cd79be66daea7bcec8b2ba60196a"},
+    {file = "clickhouse_driver-0.2.0-cp38-cp38-manylinux1_i686.whl", hash = "sha256:b6f62c226cbfaa6fd336ca5d80898f0100ea116e67cacd94fa0967afc60c6b0f"},
+    {file = "clickhouse_driver-0.2.0-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:87a7fef364b510abb5344533a394ad3ec06047af28b9272087b28e6570617183"},
+    {file = "clickhouse_driver-0.2.0-cp38-cp38-manylinux2010_i686.whl", hash = "sha256:17b30703e4390366181642f7fa866853d7134134ebeb681a1776a0abe61a93cf"},
+    {file = "clickhouse_driver-0.2.0-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:d5c5aecc58a8b71492368ebd1adb3016e122692e8a31b2ea3aa219c6a4e224a3"},
+    {file = "clickhouse_driver-0.2.0-cp38-cp38-win32.whl", hash = "sha256:2ccf58a6e1eefc4d5833b68c40716ff1294b20bd7c40a09e5d65afafade43e9d"},
+    {file = "clickhouse_driver-0.2.0-cp38-cp38-win_amd64.whl", hash = "sha256:f415be3571967ca42a4c2836826b203030c53e739b9e2b4a79ed213706ef6924"},
+    {file = "clickhouse_driver-0.2.0-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:9fc14485e178186c27107a12805640000b7973d6756f1675a46478d6e9734920"},
+    {file = "clickhouse_driver-0.2.0-cp39-cp39-manylinux1_i686.whl", hash = "sha256:f69cd1a0981c257e48ae0f4bc602632e0b5fa24aa163d3042337f04db75d29e3"},
+    {file = "clickhouse_driver-0.2.0-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:82161e12771ebcd2f9b4078f9653331aab3898b183302ae307183983d15335ff"},
+    {file = "clickhouse_driver-0.2.0-cp39-cp39-manylinux2010_i686.whl", hash = "sha256:2dda28cb424f8d449271a0eeaa6dbbfe112cfb650a3936ee2ff06359cbc7d6ad"},
+    {file = "clickhouse_driver-0.2.0-cp39-cp39-manylinux2010_x86_64.whl", hash = "sha256:fe8575cc809a6703d065e29aebe88b265e4ed435c2fdfd18353f6ab2d08ca650"},
+    {file = "clickhouse_driver-0.2.0-cp39-cp39-win32.whl", hash = "sha256:9fef38a3d23a9c2d4f5fac2227bfb2fbe606138506aa10a4a2b563b879b995d5"},
+    {file = "clickhouse_driver-0.2.0-cp39-cp39-win_amd64.whl", hash = "sha256:27cd2cd032b52f2cbcbaf064aa71805c70fe91247821ac91bf2ae71e224e6fd8"},
+    {file = "clickhouse_driver-0.2.0-pp27-pypy_73-macosx_10_9_x86_64.whl", hash = "sha256:6a20570eff4119f11c5b458d4860afdcb510f5c397d9e9bd12f2bf196ebbd846"},
+    {file = "clickhouse_driver-0.2.0-pp27-pypy_73-manylinux1_x86_64.whl", hash = "sha256:dcce87611c7f75671a768e83ac51e6ad1363199fe0bf7f74b7babb5254426e3e"},
+    {file = "clickhouse_driver-0.2.0-pp27-pypy_73-manylinux2010_x86_64.whl", hash = "sha256:5be3f6dda0e12553a40f71fd13fdf60c66c91452c0ec6bf513128441d0073ed0"},
+    {file = "clickhouse_driver-0.2.0-pp36-pypy36_pp73-macosx_10_9_x86_64.whl", hash = "sha256:fc4aaa52208d9e185b912f0e640184d87db03427bfb8694d420d0ded73903b5a"},
+    {file = "clickhouse_driver-0.2.0-pp36-pypy36_pp73-manylinux1_x86_64.whl", hash = "sha256:8c2d8575fa82190ffa8bd3c6d0d2a2f483a9a7eb0303d2b65404b2e4367b1c43"},
+    {file = "clickhouse_driver-0.2.0-pp36-pypy36_pp73-manylinux2010_x86_64.whl", hash = "sha256:97d0f3e0094bfad555a83d6c6efef4ca14607cf045ae0124933578f2ccdfcd4e"},
+    {file = "clickhouse_driver-0.2.0-pp36-pypy36_pp73-win32.whl", hash = "sha256:96dc46adc6e2441d4f76b401f38bc57de7dd810a5fb8604767d96a2d239f6634"},
+    {file = "clickhouse_driver-0.2.0-pp37-pypy37_pp73-macosx_10_9_x86_64.whl", hash = "sha256:929983db1d9b47d156d850e88831f5d85a8043b5ac877b6251d79491afb05ba4"},
+    {file = "clickhouse_driver-0.2.0-pp37-pypy37_pp73-manylinux1_x86_64.whl", hash = "sha256:f3bb0128d72db0081fbaba1acb852ecb8ed9ee8983c5b57556e3bdcb45fe487c"},
+    {file = "clickhouse_driver-0.2.0-pp37-pypy37_pp73-manylinux2010_x86_64.whl", hash = "sha256:1fdb4640166deccf8c6745970681267030064cfd7caedf79060e832f25287217"},
+    {file = "clickhouse_driver-0.2.0-pp37-pypy37_pp73-win32.whl", hash = "sha256:869e3796b61aa75988a7951ce4d8365c2e382309b9a7af2d5e98213644a5ee7a"},
+]
+colorama = [
+    {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
+    {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
+]
+decorator = [
+    {file = "decorator-4.4.2-py2.py3-none-any.whl", hash = "sha256:41fa54c2a0cc4ba648be4fd43cff00aedf5b9465c9bf18d64325bc225f08f760"},
+    {file = "decorator-4.4.2.tar.gz", hash = "sha256:e3a62f0520172440ca0dcc823749319382e377f37f140a0b99ef45fecb84bfe7"},
+]
+ipython = [
+    {file = "ipython-7.19.0-py3-none-any.whl", hash = "sha256:c987e8178ced651532b3b1ff9965925bfd445c279239697052561a9ab806d28f"},
+    {file = "ipython-7.19.0.tar.gz", hash = "sha256:cbb2ef3d5961d44e6a963b9817d4ea4e1fa2eb589c371a470fed14d8d40cbd6a"},
+]
+ipython-genutils = [
+    {file = "ipython_genutils-0.2.0-py2.py3-none-any.whl", hash = "sha256:72dd37233799e619666c9f639a9da83c34013a73e8bbc79a7a6348d93c61fab8"},
+    {file = "ipython_genutils-0.2.0.tar.gz", hash = "sha256:eb2e116e75ecef9d4d228fdc66af54269afa26ab4463042e33785b887c628ba8"},
+]
+jedi = [
+    {file = "jedi-0.17.2-py2.py3-none-any.whl", hash = "sha256:98cc583fa0f2f8304968199b01b6b4b94f469a1f4a74c1560506ca2a211378b5"},
+    {file = "jedi-0.17.2.tar.gz", hash = "sha256:86ed7d9b750603e4ba582ea8edc678657fb4007894a12bcf6f4bb97892f31d20"},
+]
+parso = [
+    {file = "parso-0.7.1-py2.py3-none-any.whl", hash = "sha256:97218d9159b2520ff45eb78028ba8b50d2bc61dcc062a9682666f2dc4bd331ea"},
+    {file = "parso-0.7.1.tar.gz", hash = "sha256:caba44724b994a8a5e086460bb212abc5a8bc46951bf4a9a1210745953622eb9"},
+]
+pexpect = [
+    {file = "pexpect-4.8.0-py2.py3-none-any.whl", hash = "sha256:0b48a55dcb3c05f3329815901ea4fc1537514d6ba867a152b581d69ae3710937"},
+    {file = "pexpect-4.8.0.tar.gz", hash = "sha256:fc65a43959d153d0114afe13997d439c22823a27cefceb5ff35c2178c6784c0c"},
+]
+pickleshare = [
+    {file = "pickleshare-0.7.5-py2.py3-none-any.whl", hash = "sha256:9649af414d74d4df115d5d718f82acb59c9d418196b7b4290ed47a12ce62df56"},
+    {file = "pickleshare-0.7.5.tar.gz", hash = "sha256:87683d47965c1da65cdacaf31c8441d12b8044cdec9aca500cd78fc2c683afca"},
+]
+prompt-toolkit = [
+    {file = "prompt_toolkit-3.0.10-py3-none-any.whl", hash = "sha256:ac329c69bd8564cb491940511957312c7b8959bb5b3cf3582b406068a51d5bb7"},
+    {file = "prompt_toolkit-3.0.10.tar.gz", hash = "sha256:b8b3d0bde65da350290c46a8f54f336b3cbf5464a4ac11239668d986852e79d5"},
+]
+ptyprocess = [
+    {file = "ptyprocess-0.7.0-py2.py3-none-any.whl", hash = "sha256:4b41f3967fce3af57cc7e94b888626c18bf37a083e3651ca8feeb66d492fef35"},
+    {file = "ptyprocess-0.7.0.tar.gz", hash = "sha256:5c5d0a3b48ceee0b48485e0c26037c0acd7d29765ca3fbb5cb3831d347423220"},
+]
+pygments = [
+    {file = "Pygments-2.7.4-py3-none-any.whl", hash = "sha256:bc9591213a8f0e0ca1a5e68a479b4887fdc3e75d0774e5c71c31920c427de435"},
+    {file = "Pygments-2.7.4.tar.gz", hash = "sha256:df49d09b498e83c1a73128295860250b0b7edd4c723a32e9bc0d295c7c2ec337"},
+]
+pytz = [
+    {file = "pytz-2020.5-py2.py3-none-any.whl", hash = "sha256:16962c5fb8db4a8f63a26646d8886e9d769b6c511543557bc84e9569fb9a9cb4"},
+    {file = "pytz-2020.5.tar.gz", hash = "sha256:180befebb1927b16f6b57101720075a984c019ac16b1b7575673bea42c6c3da5"},
+]
+traitlets = [
+    {file = "traitlets-5.0.5-py3-none-any.whl", hash = "sha256:69ff3f9d5351f31a7ad80443c2674b7099df13cc41fc5fa6e2f6d3b0330b0426"},
+    {file = "traitlets-5.0.5.tar.gz", hash = "sha256:178f4ce988f69189f7e523337a3e11d91c786ded9360174a3d9ca83e79bc5396"},
+]
+tzlocal = [
+    {file = "tzlocal-2.1-py2.py3-none-any.whl", hash = "sha256:e2cb6c6b5b604af38597403e9852872d7f534962ae2954c7f35efcb1ccacf4a4"},
+    {file = "tzlocal-2.1.tar.gz", hash = "sha256:643c97c5294aedc737780a49d9df30889321cbe1204eac2c2ec6134035a92e44"},
+]
+wcwidth = [
+    {file = "wcwidth-0.2.5-py2.py3-none-any.whl", hash = "sha256:beb4802a9cebb9144e99086eff703a642a13d6a0052920003a230f3294bbe784"},
+    {file = "wcwidth-0.2.5.tar.gz", hash = "sha256:c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83"},
+]
